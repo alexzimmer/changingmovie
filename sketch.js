@@ -1,34 +1,39 @@
-var interval = 4000;
-var clock = 0;
-var count = 1;
-var v = "v";
-var clipx = null;
-var cc;
 
-function setup () {
+var clip, clipx, clock, d, v;
+var count = 0;
 
-// v2 = createVideo(['/2.mov',]);
-// v3 = createVideo(['/3.mov',]);  
-//set timer
-// clock = millis();
+function preload () {
 var json = "videos.json";
-//load video json
-loadJSON(json, getclip);
-//cc = clipx[0];
-//v1 = createVideo([cc]);
+loadJSON(json,getclip);
 console.log(json);
+print(clip);
+}
+
+function setup(){
+  createCanvas(640,380);
+  clock = millis ();
+  d = clipx[count].duration * 1000;  
+  console.log ("duration equals " + d);
+  v = createVideo([clipx[count].local]);
+  v.hide();
 }
 
 function draw () {
-// if (millis() - clock > interval){
-//   // (v+count).play();
-//   count++;
-//   clock = millis(); 
-// }
+  
+if (millis() - clock > d) {
+  v = createVideo([clipx[count].local]);
+  v.play();
+  v.hide();
+  clock = millis (); 
+  count ++
+  }
+image(v,10,10);
 
-// if (count >= 3) {
-//     count = 1;
-//   }
+  
+if (count >= clipx.length) {
+  count = 0
+}
+
 }
 
 function getclip(video) {
