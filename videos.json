@@ -1,22 +1,329 @@
 {
 	"clips": [
     	{
-        "id": "1.1",
-        "clip-name": "intro1",
-        "local": "1-480.mov",
-        "duration": 4
+        "id": "jer",
+        "clipname": "crisis in media",
+        "local": "assets/jer/crisisinmedia.mp4"
+ 		},
+ 	    {
+        "id": "anz",
+        "clipname": "immigrants for trump",
+        "local": "assets/anz/immigrantsfortrump.mp4"
+ 		},
+	    {
+        "id": "gabe",
+        "clipname": "2017insane",
+        "local": "assets/gabe/2017insane.mp4"
+ 		},
+	    {
+        "id": "jer",
+        "clipname": "jer opening truth",
+        "local": "assets/jer/jeropeningtruth.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "1930s",
+        "local": "assets/gabe/1930s.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "beer swig",
+        "local": "assets/jer/beerswig.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "truly impartial cable",
+        "local": "assets/jer/trulyimpartialcable.mp4"
  		},
  		{
-        "id": "1.2",
-        "clip-name": "intro2",
-        "local": "2-480.mov",
-        "duration": 3
+        "id": "anz",
+        "clipname": "lost in media",
+        "local": "assets/anz/lostinmedia.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "fucking confusing times",
+        "local": "assets/gabe/fuckingconfusingtimes.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "asses in seats",
+        "local": "assets/jer/assesinseats.mp4"
+ 		},
+		{
+        "id": "anz",
+        "clipname": "fb explained",
+        "local": "assets/anz/fbexplained.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "not gonna get better",
+        "local": "assets/jer/notgonnagetbetter.mp4"
+ 		},
+		{
+        "id": "anz",
+        "clipname": "okay with racism",
+        "local": "assets/anz/okaywithracism.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "fear mongering",
+        "local": "assets/gabe/fearmongering.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "entrenched in bubbles",
+        "local": "assets/jer/entrenchedinbubbles.mp4"
+ 		},
+		{
+        "id": "anz",
+        "clipname": "illegal pols",
+        "local": "assets/anz/illegalpols.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "choose follow",
+        "local": "assets/jer/choosefollow.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "media wrong not bad",
+        "local": "assets/gabe/mediawrongnotbad.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "no preconceptions",
+        "local": "assets/jer/noprecon.mp4"
+ 		},
+		{
+        "id": "anz",
+        "clipname": "divide grows",
+        "local": "assets/anz/dividegrows.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "facebook wrong",
+        "local": "assets/gabe/facebookwrong.mp4"
+ 		},
+		{
+        "id": "anz",
+        "clipname": "driven by media",
+        "local": "assets/anz/drivenbymedia.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "media diet",
+        "local": "assets/jer/mediadiet.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "media early 20th century",
+        "local": "assets/gabe/mediaearly20thcentury.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "extra trump cov",
+        "local": "assets/jer/extratrumpcov.mp4"
+ 		},
+		{
+        "id": "anz",
+        "clipname": "give him a chance nah",
+        "local": "assets/anz/givehimachancenah.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "confusing new news",
+        "local": "assets/gabe/confusingnewnews.mp4"
+ 		},
+		{	
+        "id": "jer",
+        "clipname": "money entertainment",
+        "local": "assets/jer/moneyentertainment.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "local reporting",
+        "local": "assets/gabe/localreporting.mp4"
+ 		},
+		{
+        "id": "anz",
+        "clipname": "idealogy not going",
+        "local": "assets/anz/idealogynotgoing.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "big media issue",
+        "local": "assets/jer/bigmediaissue.mp4"
+ 		},
+		{
+        "id": "anz",
+        "clipname": "more aware of horrors",
+        "local": "assets/anz/moreawareofhorrors.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "24 hr news can't get",
+        "local": "assets/gabe/24hrnewscantget.mp4"
  		},
  		{
-        "id": "1.3",
-        "clip-name": "intro3",
-        "local": "3-480.mov",
-        "duration": 4
+        "id": "gabe",
+        "clipname": "texastohil",
+        "local": "assets/gabe/texastohil.mp4"
+ 		},
+ 		{
+        "id": "jer",
+        "clipname": "no diversity",
+        "local": "assets/jer/nodiversity.mp4"
+ 		},
+ 		{
+        "id": "anz",
+        "clipname": "understanding",
+        "local": "assets/jer/understanding.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "no facts agreement",
+        "local": "assets/jer/nofactsagreement.mp4"
+ 		},
+		{
+        "id": "anz",
+        "clipname": "trump speaks to pols",
+        "local": "assets/anz/trumpspeakstopols.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "donald news story",
+        "local": "assets/gabe/donaldnewsstory.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "obvious world",
+        "local": "assets/gabe/obviousworld.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "ridiculous spectacle",
+        "local": "assets/gabe/ridiculous spectacle.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "too obsessed with predictions",
+        "local": "assets/gabe/tooobsessedwpredictions.mp4"
+ 		},
+		{
+        "id": "jer",
+        "clipname": "no more descency",
+        "local": "assets/jer/nomoredescency.mp4"
+ 		},
+ 		{
+        "id": "jer",
+        "clipname": "not the whole story",
+        "local": "assets/jer/notthewholestory.mp4"
+ 		},
+ 		{
+        "id": "jer",
+        "clipname": "not where we need to be",
+        "local": "assets/jer/notwhereweneedtobe.mp4"
+ 		},
+ 		{
+        "id": "jer",
+        "clipname": "see eachother",
+        "local": "assets/jer/seeeachother.mp4"
+ 		},
+		{
+        "id": "anz",
+        "clipname": "fb hatred",
+        "local": "assets/anz/fbhatred.mp4"
+ 		},
+		{
+        "id": "gabe",
+        "clipname": "history books",
+        "local": "assets/gabe/historybooks.mp4"
+ 		},
+ 		{
+        "id": "jer",
+        "clipname": "trump supporters bad",
+        "local": "assets/jer/trumpsupportersbad.mp4"
+ 		},
+ 		{
+        "id": "jer",
+        "clipname": "twitter follow",
+        "local": "assets/jer/twitterfollow.mp4"
+ 		},
+ 		{
+        "id": "jer",
+        "clipname": "van jones",
+        "local": "assets/jer/vanjones.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "factory workers",
+        "local": "assets/gabe/factoryworkers.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "in history",
+        "local": "assets/gabe/inhistory.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "investigative reporting",
+        "local": "assets/gabe/investigativereporting.mp4"
+ 		},
+ 		{
+        "id": "anz",
+        "clipname": "sigh",
+        "local": "assets/anz/sigh.mp4"
+ 		},
+ 		{
+        "id": "anz",
+        "clipname": "thank you",
+        "local": "assets/anz/thankyou.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "applause",
+        "local": "assets/gabe/applause.mp4"
+ 		},
+ 		{
+        "id": "jer",
+        "clipname": "cheers",
+        "local": "assets/jer/cheers.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "next donald",
+        "local": "assets/gabe/nextdonald.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "missed the mark",
+        "local": "assets/gabe/missedthemark.mp4"
+ 		},
+ 		{
+        "id": "jer",
+        "clipname": "activist podcast",
+        "local": "assets/jer/activistpodcast.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "more support",
+        "local": "assets/gabe/moresupport.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "most entertaining",
+        "local": "assets/gabe/mostentertaining.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "not all can vote",
+        "local": "assets/gabe/notallcanvote.mp4"
+ 		},
+ 		{
+        "id": "gabe",
+        "clipname": "workedforacommpaper",
+        "local": "assets/gabe/workedforacommpaper.mp4"
  		}
 	]
 }
