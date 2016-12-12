@@ -1,16 +1,29 @@
 var clipx, v, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19, v20;
-var thedata;
 var nextcount = 0;
 var currentvid;
 var page = 0;
+var wsjFont, nytFont, econoFont, guardianFont;
+var clock;
+var interval = 3000;
 
 function preload() {
   var json = "videos.json";
   loadJSON(json, getclip);
   console.log(json);
-  var url = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=media&begin_date=20161013&end_date=20161014&api-key=c4c69bb3c0f64e7b86b37508d485c15e";
-  loadJSON(url, showHeadlines);
-}
+  
+  var nyt = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=media&begin_date=20161013&end_date=20161014&api-key=c4c69bb3c0f64e7b86b37508d485c15e";
+  var wsj = "https://newsapi.org/v1/articles?source=the-wall-street-journal&&sortBy=top&apiKey=c39ce4fdbee744aebb2f418ff1d6417b";
+  var econo = "https://newsapi.org/v1/articles?source=the-economist&sortBy=top&apiKey=c39ce4fdbee744aebb2f418ff1d6417b";
+  var guardian = "https://newsapi.org/v1/articles?source=the-guardian-uk&sortBy=top&apiKey=c39ce4fdbee744aebb2f418ff1d6417b";
+  loadJSON(nyt, showHeadlines);
+  loadJSON(wsj, showWSJtitles);
+  loadJSON(econo, showEconoTitles);
+  loadJSON(guardian, showGuardianTitles);
+  nytFont = loadFont('fonts/Olde English Regular.ttf');
+  wsjFont = loadFont('fonts/OldStandard-Bold.otf');
+  econoFont = loadFont('fonts/Swift-Regular.ttf');
+  guardianFont = loadFont('fonts/Tinos-Bold.ttf');
+  }
 
 function setup() {
   createCanvas(1280, 720);
@@ -34,6 +47,8 @@ function setup() {
   count18 = int(random(53,55));
   count19 = int(random(56,59));
   count20 = int(random(60));
+  
+  clock = millis();
 
   console.log ([clipx[count].clipname] + " -- " + [clipx[count2].clipname] + " -- " + [clipx[count3].clipname] + " -- " + [clipx[count4].clipname] + " -- " + [clipx[count5].clipname] + 
   " -- " + [clipx[count6].clipname] + " -- " + [clipx[count7].clipname] + " -- " + [clipx[count8].clipname] + " -- " + [clipx[count9].clipname] + 
@@ -130,22 +145,42 @@ if (nextcount >= 9){
     nextcount = 0;  
 }
 
-drawheadline(nextcount);
+drawheadlineNYT(nextcount, 4, 2.4);
+drawheadlineWSJ(nextcount, 4, 4);
+drawheadlineEcono(nextcount, 4, 3);
+drawheadlineGuardian(nextcount, 4, 2);
+
+if (millis() - clock > interval) {
+nextcount = nextcount + 1;
+clock = millis();
+  }
 }
 
 function nextclip(vid) {
+  
   vid.play();
   currentvid = vid;
-  //var paper = random (3);
-  //if (paper = 1) { }
-  nextcount = nextcount + 1;
- 
-
+  
 }
 
 function showHeadlines(data) {
-  thedata = data.response.docs;
-  console.log(thedata.length);
+  nytdata = data.response.docs;
+  console.log(nytdata.length);
+}
+
+function showWSJtitles(data) {
+  wsjdata = data.articles;
+  console.log(wsjdata.length);
+}
+
+function showEconoTitles(data) {
+  econodata = data.articles;
+  console.log(econodata.length);
+}
+
+function showGuardianTitles(data) {
+  guardiandata = data.articles;
+  console.log(guardiandata.length);
 }
 
 function getclip(video) {
@@ -154,12 +189,46 @@ function getclip(video) {
   console.log(clipx.length);
 }
 
-function drawheadline(nextcount) {
+function drawheadlineNYT(nextcount, positionX, positionY) {
   noStroke();
-  headline = (thedata[nextcount].headline.main);
+  headline = (nytdata[nextcount].headline.main);
+  fill(255,255,255);
+  textSize(20);
+  textAlign(CENTER);
+  textFont(nytFont);
+  text(headline, width - width / positionX , height - height / positionY);
+  text(" - The New York Times", width - width / positionX + 50 , height - height / positionY + 20);
+}
+
+function drawheadlineWSJ(nextcount, positionX, positionY) {
+  noStroke();
+  headline = (wsjdata[nextcount].title);
   fill(255,255,255);
   textSize(15);
   textAlign(CENTER);
-  textFont("Futura");
-  text(headline, width - width / 4, height - height / 2);
+  textFont(wsjFont);
+  text(headline, width - width / positionX , height - height / positionY);
+  text(" - THE WALL STREET JOURNAL.", width - width / positionX + 50, height - height / positionY + 20);
+}
+
+function drawheadlineEcono(nextcount, positionX, positionY) {
+  noStroke();
+  headline = (econodata[nextcount].title);
+  fill(255,255,255);
+  textSize(15);
+  textAlign(CENTER);
+  textFont(econoFont);
+  text(headline, width - width / positionX , height - height / positionY);
+  text(" - The Economist", width - width / positionX + 50, height - height / positionY + 20);
+}
+
+function drawheadlineGuardian(nextcount, positionX, positionY) {
+  noStroke();
+  headline = (guardiandata[nextcount].title);
+  fill(255,255,255);
+  textSize(15);
+  textAlign(CENTER);
+  textFont(guardianFont);
+  text(headline, width - width / positionX , height - height / positionY);
+  text(" - The Guardian", width - width / positionX + 50, height - height / positionY + 20);
 }
